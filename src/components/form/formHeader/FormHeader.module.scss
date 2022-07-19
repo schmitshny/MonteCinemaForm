@@ -1,0 +1,20 @@
+@import "./../../../styles/variables.scss";
+@import "./../../../styles/breakpoints";
+
+.formHeader {
+  text-align: left;
+  margin-top: 40px;
+  font-family: $Eczar;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 102%;
+  color: $primary;
+
+  &__gray {
+    color: gray;
+  }
+  @include sm {
+    font-size: 40px;
+    text-align: center;
+  }
+}

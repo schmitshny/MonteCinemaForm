@@ -1,0 +1,48 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/breakpoints";
+
+.form {
+  max-width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 64px;
+  margin-top: 40px;
+  box-shadow: 0px 4px 22px 0px #34354126;
+  border-radius: 24px;
+  gap: 30px;
+
+  &__buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  &__passwordContainer {
+    position: relative;
+  }
+  @include sm {
+    box-shadow: none;
+    width: 100vw;
+    padding: 20px;
+    align-items: center;
+
+    &__buttons {
+      flex-direction: column;
+      flex-flow: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+    }
+  }
+}
+
+.toggleIcon {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}

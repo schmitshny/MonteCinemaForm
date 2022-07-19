@@ -1,0 +1,37 @@
+@import "./../styles/variables.scss";
+
+.main {
+  text-align: center;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__header {
+    font-family: $Eczar;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 102%;
+    color: $primary;
+  }
+
+  &__paragraph {
+    font-family: $Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    width: 559px;
+    text-align: center;
+    margin: 48px 0;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}

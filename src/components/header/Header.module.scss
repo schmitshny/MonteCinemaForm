@@ -1,0 +1,29 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/breakpoints";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  max-width: 1440px;
+  padding: 25px 48px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &__caption {
+    font-size: 1rem;
+    font-family: $RobotoMono;
+    text-transform: uppercase;
+    color: $primary;
+    font-weight: 500;
+    line-height: 21.1px;
+  }
+
+  @include sm {
+    justify-content: center;
+    &__caption {
+      display: none;
+    }
+  }
+}

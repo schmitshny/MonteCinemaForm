@@ -1,0 +1,32 @@
+@import "./../styles/variables.scss";
+
+.button {
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  height: 56px;
+  width: 228px;
+  border-radius: 64px;
+  font-family: $RobotoMono;
+  font-size: 18px;
+  font-weight: 500;
+  color: $primaryRed;
+  cursor: pointer;
+
+  &:hover {
+    background: $secondaryRed;
+    color: #fff;
+  }
+  &:active {
+    border: 5px solid #f47073;
+  }
+}
+
+.redBackground {
+  background: $primaryRed;
+  color: #fff;
+}
